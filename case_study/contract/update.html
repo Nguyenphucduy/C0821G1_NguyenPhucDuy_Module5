@@ -6,68 +6,106 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../furama.css">
 </head>
 <body>
-<h1>Update Contract</h1>
 
-<form>
-    <div class="form-group">
-        <label for="contractCode">contractCode</label>
-        <input type="text" class="form-control" id="contractCode">
+<div class="menu container-fluid row" >
+    <div class="col-12">
+        <center>
+            <div class="sidebar1">
+                <a href="#" class="text-light">Home</a>
+            </div>
+            <div class="sidebar2">
+                <a href="#" class="text-light" >Employee</a>
+            </div>
+            <div class="sidebar3">
+                <a href="#" class="text-light">Customer</a>
+            </div>
+            <div class="sidebar4">
+                <a href="#" class="text-light">Service</a>
+            </div>
+            <div class="sidebar5">
+                <a href="#" class="text-light">Contract</a>
+            </div>
+        </center>
     </div>
-    <div class="form-group">
-        <label for="contractStartDate">contractStartDate</label>
-        <input type="date" class="form-control" id="contractStartDate" aria-describedby="emailHelp">
+</div>
+<div class="container-fluid row">
+    <div class="col-12">
+        <h1 class="text-center">Update Contract</h1>
     </div>
-    <div class="form-group">
-        <label for="contractEndDate">contractEndDate</label>
-        <input type="date" class="form-control" id="contractEndDate" aria-describedby="emailHelp">
-    </div>
-    <div class="form-group">
-        <label for="contractDeposit">contractDeposit</label>
-        <input type="number" class="form-control" id="contractDeposit" aria-describedby="emailHelp">
-    </div>
-    <div class="form-group">
-        <label for="contractTotalMoney">contractTotalMoney</label>
-        <input type="number" class="form-control" id="contractTotalMoney" aria-describedby="emailHelp">
-    </div>
-    <div class="form-group">
-        <label for="serviceResort">serviceResort</label>
-        <select class="form-control" id="serviceResort">
-            <option>serviceResort 1</option>
-            <option>serviceResort 2</option>
-            <option>serviceResort 3</option>
-            <option>serviceResort 4</option>
-            <option>serviceResort 5</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="employee">employee</label>
-        <select class="form-control" id="employee">
-            <option>employee 1</option>
-            <option> employee 2</option>
-            <option>employee 3</option>
-            <option>employee 4</option>
-            <option>employee 5</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="customer">customer</label>
-        <select class="form-control" id="customer">
-            <option>customer 1</option>
-            <option>customer 2</option>
-            <option>customer 3</option>
-            <option>customer 4</option>
-            <option>customer 5</option>
-        </select>
-    </div>
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 
+</div>
+
+<div class="container-fluid row">
+    <div class="col-12">
+        <form>
+            <div class="form-group">
+                <label for="contractCode">contractCode</label>
+                <input type="text" class="form-control" id="contractCode">
+            </div>
+            <div class="form-group">
+                <label for="contractStartDate">contractStartDate</label>
+                <input type="date" class="form-control" id="contractStartDate" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="contractEndDate">contractEndDate</label>
+                <input type="date" class="form-control" id="contractEndDate" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="contractDeposit">contractDeposit</label>
+                <input type="number" class="form-control" id="contractDeposit" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="contractTotalMoney">contractTotalMoney</label>
+                <input type="number" class="form-control" id="contractTotalMoney" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="serviceResort">serviceResort</label>
+                <select class="form-control" id="serviceResort">
+                    <option>serviceResort 1</option>
+                    <option>serviceResort 2</option>
+                    <option>serviceResort 3</option>
+                    <option>serviceResort 4</option>
+                    <option>serviceResort 5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="employee">employee</label>
+                <select class="form-control" id="employee">
+                    <option>employee 1</option>
+                    <option> employee 2</option>
+                    <option>employee 3</option>
+                    <option>employee 4</option>
+                    <option>employee 5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customer">customer</label>
+                <select class="form-control" id="customer">
+                    <option>customer 1</option>
+                    <option>customer 2</option>
+                    <option>customer 3</option>
+                    <option>customer 4</option>
+                    <option>customer 5</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="footer container-fluid row">
+    <div class="col-12">
+        <h2>Bản quyền thuộc Mr.Duy C0821G1</h2>
+    </div>
+</div>
 
 </body>
 </html>
