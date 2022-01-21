@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update contract</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../create.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Customer<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Contract 1</a>
+                    <a class="dropdown-item" href="#">Contract 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Contract 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Employee</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Create customer</h3>
+                <div class="inputBox">
+                    <span>code :</span>
+                    <input type="text" placeholder="code">
+                </div>
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="full name">
+                </div>
+                <div class="inputBox">
+                    <span>date of birth :</span>
+                    <input type="date" placeholder="date of birth">
+                </div>
+                <div class="form-group">
+                    <label for="gender">gender: </label>
+                    <select class="form-control" id="gender">
+                        <option>Male</option>
+                        <option>FeMale</option>
+                    </select>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Infomation more</h3>
+
+                <div class="inputBox">
+                    <span>Card Id :</span>
+                    <input type="number" placeholder="Card Id">
+                </div>
+                <div class="inputBox">
+                    <span>Phone Number :</span>
+                    <input type="number" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerType">customerType</label>
+                    <select class="form-control" id="customerType">
+                        <option>Diamond</option>
+                        <option>Platinium</option>
+                        <option>Gold</option>
+                        <option>Silver</option>
+                        <option>Member</option>
+                    </select>
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input type="submit" value="create customer" class="submit-btn">
+
+    </form>
+
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h2>Bản quyền thuộc Mr.Duy C0821G1</h2>
+    </div>
+</div>
+</body>
+</html>
