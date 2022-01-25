@@ -1,0 +1,15 @@
+<center>
+<h1>Calculator</h1>
+<p>
+<input type="text" [(ngModel)]="numberOne" placeholder="number 1">
+<input type="text" [(ngModel)]="numberTwo" placeholder="number 2">
+</p>
+<p>
+  <input type="button" value="addition(+)" (click)="calculator('+')"/>
+  <input type="button" value="addition(-)" (click)="calculator('-')"/>
+  <input type="button" value="multiplication(x)" (click)="calculator('*')"/>
+  <input type="button" value="division(/)" (click)="calculator('/')"/>
+</p>
+
+<p style="color: red">Result : {{result}}</p>
+</center>
