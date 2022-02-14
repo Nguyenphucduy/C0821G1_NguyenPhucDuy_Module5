@@ -36,6 +36,7 @@ export class RatingBarComponent implements OnInit, OnChanges {
         value: index + 1,
         active: index < ratingValue
       }));
+    console.log(this.ratingUnits);
   }
 
   ngOnInit() {
@@ -46,6 +47,8 @@ export class RatingBarComponent implements OnInit, OnChanges {
     this.ratingValue = index + 1;
     this.ratingUnits.forEach((item, idx) => item.active = idx < this.ratingValue);
     this.rateChange.emit(this.ratingValue);
+    const arr: Array<IRatingUnit> = this.ratingUnits.filter(value => value.active);
+    console.log(arr);
   }
   enter(index) {
     this.ratingUnits.forEach((item, idx) => item.active = idx <= index);

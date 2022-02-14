@@ -1,0 +1,12 @@
+<p>teaplate-driven-from-test works!</p>
+<form (ngSubmit)="getInfoStudentForm(register)" #register="ngForm" novalidate >
+  <div>
+    Name:
+    <input ngModel name="name" type="text" required>
+  </div>
+  <div>
+    Date of birth:
+    <input ngModel [(ngModel)]="student.dateOfBirth" name="dateOfBirth" type="date" required>
+  </div>
+<input type="submit" value="Register">
+</form>

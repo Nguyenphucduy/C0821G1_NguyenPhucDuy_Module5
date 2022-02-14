@@ -1,0 +1,22 @@
+<p>reactive-from-test works!</p>
+<form [formGroup]="studentForm" >
+  <div>
+    Name:
+    <input type="text" formControlName="name" />
+  </div>
+  <p style="color: red" *ngIf="studentForm.controls.name.hasError('required') && studentForm.controls.name.dirty">Please input name</p>
+  <div>
+    Date of birth:
+    <input type="date" formControlName="dateOfBirth" />
+  </div>
+  <p style="color: red" *ngIf="studentForm.controls.dateOfBirth.hasError('required') && studentForm.controls.name.dirty">Please input dateOfBirth</p>
+  <p style="color: red" *ngIf="studentForm.controls.dateOfBirth.hasError('not18') && studentForm.controls.name.dirty">not small than 18 age</p>
+
+  <div formGroupName="pwGroup">
+    <p>password: <input type="text" formControlName="password"></p>
+    <p>passwordConfirm:   <input type="text" formControlName="passwordConfirm"></p>
+  </div>
+  <div>
+    <button (click)="getInfoStudent()" [disabled]="studentForm.invalid">Register</button>
+  </div>
+</form>

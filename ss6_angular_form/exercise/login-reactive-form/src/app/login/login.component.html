@@ -1,0 +1,9 @@
+<h1>User login</h1>
+<form [formGroup]="userForm">
+  <p>email: <input type="text" formControlName="email"></p>
+  <p style="color: red" *ngIf="userForm.controls.email.hasError('email')">Phải đúng định dạng email</p>
+  <p>password: <input type="text" formControlName="password"></p>
+  <p style="color: red" *ngIf="userForm.controls.password.hasError('minlength')">Mật khẩu có độ dài ít nhất là 6</p>
+  <p style="color: red" *ngIf="userForm.controls.password.hasError('required')">Không được để trống</p>
+  <button (click)="getInfoUser()">Login</button>
+</form>

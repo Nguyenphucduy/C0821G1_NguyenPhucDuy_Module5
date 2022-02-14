@@ -1,0 +1,28 @@
+<app-create (eventEmitter)="fromCreate($event)"></app-create>
+
+<table>
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>POINT</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of studentList;index as i" (click)="viewDetail(student)">
+    <td>{{i + 1}}</td>
+    <td>{{student.name}}</td>
+    <td>
+      <span *ngIf="student.gender==1;else c08g">
+        Male
+      </span>
+      <ng-template #c08g>
+        Female
+      </ng-template>
+    </td>
+    <td>{{student.point}}</td>
+  </tr>
+  </tbody>
+</table>
+<app-detail [student]="studentDetail"></app-detail>

@@ -1,0 +1,28 @@
+<table class="table table-dark table-striped">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>DATEOFBIRTH</th>
+    <th>GENDER</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of studentList;index as i">
+    <td>{{i + 1}}</td>
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.dateOfBirth}}</td>
+    <td>
+      <span *ngIf="student.gender==1;else c08g">
+        Male
+      </span>
+      <ng-template #c08g>
+        Female
+      </ng-template>
+    </td>
+  </tr>
+  </tbody>
+
+</table>
