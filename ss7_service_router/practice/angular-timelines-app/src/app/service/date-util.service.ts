@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-// @ts-ignore
 import {addMonths, addYears, differenceInDays, differenceInMonths, differenceInYears} from 'date-fns';
 
 @Injectable({

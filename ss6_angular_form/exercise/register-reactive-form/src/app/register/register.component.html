@@ -24,14 +24,13 @@
   </div>
   <p>phone: <input type="text" formControlName="phone"></p>
   <p style="color: red" *ngIf="userForm.controls.phone.hasError('pattern')">Số điện thoại phải đúng định dạng</p>
+
   <div formGroupName="pwGroup">
     <p>password: <input type="text" formControlName="password"></p>
     <p>passwordConfirm: <input type="text" formControlName="passwordConfirm"></p>
   </div>
 
-<!--  <p style="color: red" *ngIf="userForm.controls.password.hasError('minLength') && userForm.controls.password.dirty">Mật khẩu có độ dài ít nhất là 6</p>-->
-<!--  <p style="color: red" *ngIf="userForm.controls.passwordConfirm.hasError('minLength') && userForm.controls.passwordConfirm.dirty">Mật khẩu có độ dài ít nhất là 6</p>-->
-
   <p style="color: red" *ngIf="userForm.controls.pwGroup.hasError('wrongPassword')">Mật khẩu chưa khớp nhau</p>
+  <p style="color: red" *ngIf="userForm.get('pwGroup.password').hasError('minlength')">Mật khẩu phải có độ dài tối nhiểu là 6</p>
   <button (click)="getInfoUser()">Create</button>
 </form>

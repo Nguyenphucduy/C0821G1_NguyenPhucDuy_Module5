@@ -26,8 +26,8 @@ export class RegisterComponent implements OnInit {
       gender: new FormControl(),
       pwGroup: new FormGroup({
         password: new FormControl('', Validators.minLength(6)),
-        passwordConfirm: new FormControl('', Validators.minLength(6))
-      }, this.checkPassword)
+        passwordConfirm: new FormControl()
+      }, this.checkPassword )
     });
   }
 

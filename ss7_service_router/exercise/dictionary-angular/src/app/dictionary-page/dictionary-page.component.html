@@ -1,0 +1,16 @@
+<h1>List word</h1>
+<table>
+  <tr>
+    <td>stt</td>
+    <td>word</td>
+<!--    <td>mean</td>-->
+    <td>detail</td>
+
+  </tr>
+  <tr *ngFor="let iWord of words; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{iWord.word}}</td>
+<!--    <td>{{iWord.mean}}</td>-->
+    <a routerLink="/detail/{{iWord.word}}">Detail</a>
+  </tr>
+</table>
