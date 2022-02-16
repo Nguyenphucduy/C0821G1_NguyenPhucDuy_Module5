@@ -1,0 +1,26 @@
+{
+  "studentList": [
+    {
+      "id": 983,
+      "name": "Nguyen Van Dong",
+      "dateOfBirth": "2000-06-12",
+      "class_id": 2
+    },
+    {
+      "id": 231,
+      "name": "Do Hung Dung",
+      "dateOfBirth": "1999-07-12"
+    },
+    {
+      "id": 652,
+      "name": "Tran Cong Abc",
+      "dateOfBirth": "2001-08-14"
+    }
+  ],
+  "classList": [
+    {
+      "id": 2,
+      "name": "C08G"
+    }
+  ]
+}

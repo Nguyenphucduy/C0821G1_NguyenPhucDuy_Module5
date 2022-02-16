@@ -1,0 +1,31 @@
+<h2>List Student</h2>
+<table border="1">
+  <tr>
+    <th>No</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Date of birth</th>
+    <th>Gender</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr *ngFor="let studentObj of studentList;index as i">
+    <td>{{i + 1}}</td>
+    <td>{{studentObj.id}}</td>
+    <td>{{studentObj.name}}</td>
+    <td>{{studentObj.dateOfBirth}}</td>
+    <td>
+      <span *ngIf="studentObj.gender === 1;else elseBlock">
+        Male
+      </span>
+      <ng-template #elseBlock>
+        Female
+      </ng-template>
+    </td>
+    <td>
+      <a routerLink="/detail/{{studentObj.id}}">Detail</a>
+    </td>
+    <td>
+      <a routerLink="/update/{{studentObj.id}}">Update</a>
+    </td>
+  </tr>
+</table>

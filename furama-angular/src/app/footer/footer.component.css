@@ -1,0 +1,10 @@
+.credit {
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #aaa;
+}
+.credit span {
+  color: #29d9d5;
+}

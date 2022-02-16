@@ -1,0 +1,17 @@
+<h1>Delete Todo</h1>
+<form [formGroup]="todoForm" (ngSubmit)="deleteTodo(todoId)">
+  <table>
+    <tr>
+      <td>Content:</td>
+      <td><input type="text" formControlName="content"></td>
+    </tr>
+    <tr>
+      <td>Complete:</td>
+      <td><input type="text" formControlName="complete"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Delete</button></td>
+    </tr>
+  </table>
+</form>
