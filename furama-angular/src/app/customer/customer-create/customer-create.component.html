@@ -1,0 +1,43 @@
+<h1>Create todo</h1>
+<form [formGroup]="customerForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>firstName:</td>
+      <td><input type="text" formControlName="firstName"></td>
+    </tr>
+    <tr>
+      <td>lastName:</td>
+      <td><input type="text" formControlName="lastName"></td>
+    </tr>
+    <tr>
+      <td>dateOfBirth:</td>
+      <td><input type="text" formControlName="dateOfBirth"></td>
+    </tr>
+    <tr>
+      <td>gender:</td>
+      <td><input type="text" formControlName="gender"></td>
+    </tr>
+    <tr>
+      <td>phone:</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>email:</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+    <tr>
+      <td>address:</td>
+      <td><input type="text" formControlName="address"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Create</button>
+      </td>
+    </tr>
+  </table>
+</form>

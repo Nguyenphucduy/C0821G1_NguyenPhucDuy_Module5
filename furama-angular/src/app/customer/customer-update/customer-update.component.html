@@ -1,0 +1,41 @@
+<h2>Update Student</h2>
+
+<h2>Update Student</h2>
+
+<form [formGroup]="customerForm" (ngSubmit)="updateInfoCustomer()">
+  <div>
+    firstName:
+    <input type="text" formControlName="firstName" />
+  </div>
+
+  <div>
+    lastName:
+    <input type="text" formControlName="lastName" />
+  </div>
+  <div>
+    dateOfBirth:
+    <input type="text" formControlName="dateOfBirth" />
+  </div>
+
+  <div>
+    gender:
+    <input type="text" formControlName="gender" />
+  </div>
+  <div>
+    phone:
+    <input type="text" formControlName="phone" />
+  </div>
+
+  <div>
+    email:
+    <input type="text" formControlName="email" />
+  </div>
+  <div>
+    address:
+    <input type="text" formControlName="address" />
+  </div>
+
+  <div>
+    <input type="submit" value="Update" />
+  </div>
+</form>
